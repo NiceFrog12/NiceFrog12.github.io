@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+h2, h1, a, .itemcounter{
+    color:white;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+*{
+    margin: 0;
+}
+body{
+    background-color: #4512AE;
+}
+header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1C1E53;
+}
+div{
+    background-color: #1C1E53;
+    margin-top: 44px;
+}
+.logo{
+    flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 24px;
+}
+nav{
+    padding-right: 10vh;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+.container img{
+    margin: 20px;
+}
+.container{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    padding-bottom: 25px;
+    gap: 10% ;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.armor {
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+.weapon img{
+    gap: 100px;
+    justify-content: center;
+    object-fit:contain;
+}
+.content a{
+    font-size: 90px;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+
+#gun{
+    margin-left: -250px ;
+    margin-bottom: 200px ;
+}
+#ranger_emblem{
+    margin-bottom: 125px;
+}
+
+.calamity{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: -60vh;
+    margin-bottom: 10vh;
+}
+.calamity h1{
+    padding-left: 20px;
+    font-size: 70px;
+    line-height: 1.1;
+}
+footer{
+    background-color: #1C1E53;
+    padding: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
+footer a{
+    display: inline-flex;
+    margin:0 20px;
+    font-size: 50px ;
+}
+
+
+
+/* this is for the mage.html */
+.classblock{
+    display: flex;
+    justify-content: start;
+}
+
+.armorcontainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.armorcraft{
+    display: flex ;
+    align-items: center;
+}
+
+.preboss_weapon_mage>h1{
+    font-size: 100px;
+}
+
+.itemcounter{
+    color: white;
+    font-size: 50px;
+    padding-right: 10px;
+    padding-left: 10px ;
+}
+
+.preboss_weapon_mage{
+    width: 70vh;
+}
+
+.weapon_column{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.diamond_staff_recipe{
+    display: flex;
+    justify-content: center;
+}
+.diamond_staff_column{
+    display: flex;
+    flex-direction: column;
+}
+.weapon_row{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.demon_scythe_column{
+    display: flex;
+    flex-direction: column;
+}
