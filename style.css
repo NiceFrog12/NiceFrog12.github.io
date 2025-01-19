@@ -1,175 +1,247 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-h2, h1, a, .itemcounter{
-    color:white;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: bold;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+:root{
+    --main_text_color:#ABB2BF;
+    --headings:#FFFFFF;
+    --heading-sizes:36px; /* aka the font size. Maybe make another size later for headings in the cards for skills/projects */
+    --main_font:"Fira Code", serif;
+    --text_size:20px;
+    --default_bold:600;
+    --text_size--bigger:24px;
 }
-*{
-    margin: 0;
+
+html{
+    background-color: #282C33;
+   /* background-color: #0e1013;    this lowkey looks good
+    background-color: #351f3b;    and this too*/
 }
-body{
-    background-color: #4512AE;
+.main__text{
+    color:var(--main_text_color);
+    font-family: var(--main_font);
 }
-header{
-    padding-top: 10px;
-    padding-bottom: 10px;
+.logo__text{
+    color:var(--main_text_color);
+    font-family: var(--main_font);
+    font-weight: var(--default_bold);
+    font-size: var(--heading-sizes);
+    color: var(--headings);
+    padding-left: 15px;
+}
+.main__text--big{
+    font-size: var(--text_size--bigger);
+    color: var(--headings);
+}
+
+.main__heading{
+    color: var(--headings);
+    font-size: var(--heading-sizes);
+    font-family: var(--main_font);
+}
+
+.main__header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #1C1E53;
+    align-items:center;
+    margin-bottom: 11vh;
+    padding: 0 10vw 0 5vw;
 }
-div{
-    background-color: #1C1E53;
-    margin-top: 44px;
-}
-.logo{
-    flex-direction: row;
-    margin-top: 0px;
-    margin-bottom: 0px;
+.banner__portrait{
     display: flex;
-}
-nav a{
-    color: white;
-    text-decoration: none;
-    padding-right: 20px;
-    font-size: 24px;
-}
-nav{
-    padding-right: 10vh;
-}
-nav a:hover{
-    text-decoration: underline;
-}
-.container img{
-    margin: 20px;
-}
-.container{
-    width: 100%;
-    height: 900px;
-    position: relative;
-    overflow: hidden; 
-    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content:center;
-    padding-bottom: 25px;
-    gap: 10% ;
+}
+.portrait__image{
+    height: 650px;
+    width: auto;
+    margin-right: 10vw;
+}
+.portrait__textbox{
+    display: flex;
+    border: 1px solid #FFFFFF;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+    padding: 0 410px 0px 8px;
+    gap: 10px;
+}
+.textbox__square--pink{
+    background-color:#C778DD;
+    height: 25px;
+    width: 25px;
+}
+.header__logo{
+    display: flex;
+}
+.main__sidebar{
+    display:flex;
+    position:absolute;
+    top: 0;
+    left: 17;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    height: 191px;
+    background-color: #ABB2BF;
+    width: 1px;
 }
 
-.content{
+.nav__list{
+    display: flex;
+    gap: 35px;
+}
+.list__item{
+    color:var(--main_text_color);
+    text-decoration: none;
+    font-size: var(--text_size);
+}
+.list__item:hover{
+    color:var(--headings);
+}
+p{
+    font-size: var(--text_size);
+}
+.main__banner{
+    display: flex;
+    justify-content: space-around;
+}
+
+span{
+    color: #C778DD;
+    margin: 0px;
+    font-family: var(--main_font);
+}
+.banner__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 25vh 10vw;
+}
+
+.section__header{
+    display:flex;
+    gap: 25px;
+    align-items: center;
+}
+.horizontal_line--pink{
+    height: 1px;
+    width: 45vw;
+    background-color: #C778DD;
+}
+.projects__boxes{
+    display:flex;
+}
+.skills__boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap:10px;
+}
+.boxes__skillbox{
+    border:1px solid white; /*temporary. Make it look prettier*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 0 10px 0 10px ;
 }
-.armor {
-    width: 25%;
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
-    object-fit: contain;
+.horizontal_line{
+    height: 1px;
+    width: 100%;
+    background-color: white;
 }
-.weapon img{
-    gap: 100px;
-    justify-content: center;
-    object-fit:contain;
-}
-.content a{
-    font-size: 90px;
-    text-decoration:none;
-}
-a:hover{
-    text-decoration:underline;
+.main__text--bold{
+    font-weight: var(--default_bold);
+    color: var(--headings);
+    font-family: var(--main_font);
 }
 
-#gun{
-    margin-left: -250px ;
-    margin-bottom: 200px ;
-}
-#ranger_emblem{
-    margin-bottom: 125px;
-}
-
-.calamity{
-    justify-content: center;
+.aboutme__info{
     display: flex;
-    align-items: center;
-    margin-left: -60vh;
-    margin-bottom: 10vh;
+    justify-content: space-between;
 }
-.calamity h1{
-    padding-left: 20px;
-    font-size: 70px;
-    line-height: 1.1;
+.info__portrait{
+    height:600px ;
+    width: auto;
 }
-footer{
-    background-color: #1C1E53;
-    padding: 5vh;
+.contacts__content{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 40px;
 }
-footer a{
-    display: inline-flex;
-    margin:0 20px;
-    font-size: 50px ;
-}
-
-
-
-/* this is for the mage.html */
-.classblock{
-    display: flex;
-    justify-content: start;
-}
-
-.armorcontainer{
-    align-items: center;
+.content__contactsbox{
+    border: 1px solid #ABB2BF;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 0 15px 0 15px;
 }
-.armorcraft{
-    display: flex ;
+.contactsbox__flexbox{
+    display:flex;
     align-items: center;
+    justify-content: center;
 }
 
-.preboss_weapon_mage>h1{
-    font-size: 100px;
+/* a little gap for every section on the left and right so that it looks good. */
+.main__banner,
+.main__projects,
+.main__skills,
+.main__aboutme,
+.main__contacts{
+    padding: 0 10vw 0 10vw ;
 }
-
-.itemcounter{
+/* decided to try a button from uiverse.io website */
+.button {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
     color: white;
-    font-size: 50px;
-    padding-right: 10px;
-    padding-left: 10px ;
-}
-
-.preboss_weapon_mage{
-    width: 70vh;
-}
-
-.weapon_column{
-    display: flex;
-    align-items: center;
     flex-direction: column;
-}
-
-.diamond_staff_recipe{
-    display: flex;
     justify-content: center;
-}
-.diamond_staff_column{
-    display: flex;
-    flex-direction: column;
-}
-.weapon_row{
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-}
-
-.demon_scythe_column{
-    display: flex;
-    flex-direction: column;
-}
+    border: none;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 128px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .button:hover::after {
+    filter: blur(30px);
+  }
+  
+  .button:hover::before {
+    transform: rotate(-180deg);
+  }
+  
+  .button:active::before {
+    scale: 0.7;
+  }
+  
+  
