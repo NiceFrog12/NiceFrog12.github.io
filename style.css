@@ -12,8 +12,7 @@
 
 html{
     background-color: #282C33;
-   /* background-color: #0e1013;    this lowkey looks good
-    background-color: #351f3b;    and this too*/
+    /* background-color: #0e1013;     this lowkey looks good */
 }
 .main__text{
     color:var(--main_text_color);
@@ -94,7 +93,7 @@ html{
 .list__item{
     color:var(--main_text_color);
     text-decoration: none;
-    font-size: var(--text_size);
+    font-size: var(--heading-sizes);
 }
 .list__item:hover{
     color:var(--headings);
