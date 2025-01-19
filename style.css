@@ -94,6 +94,7 @@ html{
     color:var(--main_text_color);
     text-decoration: none;
     font-size: var(--heading-sizes);
+    font-family: var(--main_font);
 }
 .list__item:hover{
     color:var(--headings);
