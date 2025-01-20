@@ -24,7 +24,7 @@
 
         <nav class="header__nav">
             <ul class="nav__list">
-                <a href="" class="list__item"><span>#</span>home</a>
+                <a href="" class="list__item span--bold"><span>#</span>home</a>
                 <a href="" class="list__item"><span>#</span>works</a>
                 <a href="" class="list__item"><span>#</span>about-me</a>
                 <a href="#contact__links" class="list__item"><span>#</span>contacts</a>
@@ -40,7 +40,7 @@
 
     <section class="main__banner">
         <div class="banner__info">
-            <h1 class="info__header main__heading">I am a <span>full-stack dev</span>, knowing Python and HTML</h1>
+            <h1 class="info__header main__heading">I am a <span class="span--bold">full-stack dev</span>, knowing Python and HTML</h1>
             <p class="info__text main__text">I can make websites, logic for various projects, and learn new things on the way!</p>
                 
             <div class="info__contact">
@@ -55,7 +55,7 @@
             <img src="images/firstpic.png" alt="Picture of me" class="portrait__image">      <!-- make this a picture of you --> 
             <div class="portrait__textbox">
                 <div class="textbox__square--pink"></div>
-                <p class="textbox__text main__text">Currently learning: HTML</p>
+                <p class="textbox__text main__text">Currently learning: <span class="span--bold--white">HTML</span></p>
             </div>
         </div>
     </section>
@@ -199,13 +199,13 @@
                 <p class="main__text--bold">Contact me here:</p>
                 <div class="contactsbox__flexbox">
                     <a href="">
-                        <img src="images/Discord.svg" alt="discord icon">
+                        <img src="images/Discord.svg" alt="discord icon" class="media--icon">           <!--turn the pictures into <a> tags later to link to your actual socials!!!!!!!!!!-->
                     </a>
                     <p class="main__text">niceguy12_</p>
                 </div>
                 <div class="contactsbox__flexbox">
                     <a href="">
-                        <img src="images/Email.svg" alt="email icon">
+                        <img src="images/Email.svg" alt="email icon" class="media--icon">
                     </a>
                     <p class="main__text">sasha18062009@gmail.com</p>
                 </div>
@@ -215,7 +215,24 @@
 
 
     <footer>
-
+        <div class="footer__main">
+            <div class="main__credits">
+                <div class="credits__name">
+                    <img src="images/logo.svg" alt="logo" class="logo__img--small">
+                    <p class="span--bold--white">Litvins</p>
+                    <p class="main__text">sasha18062009@gmail.com</p>
+                </div>
+                <p class="span--bold--white">Full-stack developer</p>
+            </div>
+            <div class="main__media">
+                <p class="span--bold--white main__text--big">Media</p>
+                <div class="media__images">
+                    <img src="images/Github.svg" alt="github" class="media--icon">      <!--turn the pictures into <a> tags later to link to your actual socials-->
+                    <img src="images/Figma.svg" alt="figma" class="media--icon">
+                    <img src="images/Discord.svg" alt="discord" class="media--icon">
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
