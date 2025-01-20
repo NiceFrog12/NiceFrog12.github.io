@@ -6,13 +6,16 @@
     --heading-sizes:36px; /* aka the font size. Maybe make another size later for headings in the cards for skills/projects */
     --main_font:"Fira Code", serif;
     --text_size:20px;
-    --default_bold:600;
+    --default_bold:700;
     --text_size--bigger:24px;
 }
 
 html{
     background-color: #282C33;
     /* background-color: #0e1013;     this lowkey looks good */
+}
+p{
+    font-family: var(--main_font);
 }
 .main__text{
     color:var(--main_text_color);
@@ -112,6 +115,13 @@ span{
     margin: 0px;
     font-family: var(--main_font);
 }
+.span--bold{
+    font-weight: var(--default_bold);
+}
+.span--bold--white{
+    font-weight: var(--default_bold);
+    color: #FFFFFF;
+}
 .banner__info{
     display: flex;
     flex-direction: column;
@@ -178,6 +188,36 @@ span{
     display:flex;
     align-items: center;
     justify-content: center;
+}
+
+
+footer{
+    margin-top: 10vh;
+    border-top: white solid 1px;
+    padding: 5vh 10vw 5vh 10vw;
+}
+
+.footer__main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__credits{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+
+.media--icon{
+    width: auto;
+    height: 45px;
+}
+
+.credits__name{
+    display: flex;
+    gap: 5px;
+    
 }
 
 /* a little gap for every section on the left and right so that it looks good. */
