@@ -317,6 +317,15 @@ footer{
     --text_size:24px;
     --default_bold:700;
     --text_size--bigger:28px;
+    
+    }
+    /* a little gap for every section on the left and right so that it looks good. */
+    .main__banner,
+    .main__projects,
+    .main__skills,
+    .main__aboutme,
+    .main__contacts{
+        padding: 0 0 0 0 ;
     }
     .nav__list{
         display: none;
@@ -330,14 +339,14 @@ footer{
         justify-content: flex-start;
         align-items: center;
         margin-left: 20px;
-        padding: 0 245px 0px 8px;
+        padding: 0 10px 0px 8px;
     }
     .portrait__image{
-        width: 667px;
+        width: 100vw;
         height: auto;
     }
-    html{
-        width: 200vw;
+    body{
+        width: 100vw;
     }
     .info__contact{
         display: flex;
@@ -357,5 +366,23 @@ footer{
     .aboutme__info{
         display: flex;
         flex-direction: column-reverse;
+    }
+    .contacts__content{
+        display: flex;
+        flex-direction: column;
+    }
+    .main__credits{
+        display: none;
+    }
+    .main__text{
+        font-size: 20px;
+    }
+    .info__portrait{
+        height: auto;
+        width: 100vw;
+    }
+    .aboutme__header{
+        width: 300px;
+        margin-right: -100px;
     }
 }
