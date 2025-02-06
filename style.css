@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+/*TEMPORARY, REMOVE AFTER COMPLETING. THIS IS MADE TO HIDE THE WIP STUFF*/
+.main__projects, .list__language{
+    display:none;
+}
 
 :root{
     --main_text_color:#ABB2BF;
