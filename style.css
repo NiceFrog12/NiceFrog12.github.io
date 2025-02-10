@@ -151,6 +151,9 @@ span{
     width: 45vw;
     background-color: #C778DD;
 }
+.main__projects{
+    display: none;
+}
 .projects__boxes{
     display:flex;
 }
@@ -240,6 +243,7 @@ footer{
 .main__contacts{
     padding: 0 10vw 0 10vw ;
 }
+
 /* decided to try a button from uiverse.io website */
 .button {
     position: relative;
@@ -321,6 +325,10 @@ footer{
     --default_bold:700;
     --text_size--bigger:28px;
     
+    }
+
+    .main__projects{
+        display: none;
     }
     /* a little gap for every section on the left and right so that it looks good. */
     .main__banner,
