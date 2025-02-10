@@ -22,7 +22,15 @@
             <p class="logo__text">Litvin</p>
         </div>
 
+        <!-- code for the burger menu on phones -->
+        <div class="burger-menu">
+            <span></span>
+        </div>          
+
         <nav class="header__nav">
+            
+            
+
             <ul class="nav__list">
                 <a href="" class="list__item span--bold"><span>#</span>home</a>
                 <a href="" class="list__item"><span>#</span>works</a>
@@ -38,14 +46,19 @@
         
     </header>
 
+    
+    
+
+
+
     <section class="main__banner">
         <div class="banner__info">
-            <h1 class="info__header main__heading">I am a <span class="span--bold">full-stack dev</span>, knowing Python and HTML</h1>
-            <p class="info__text main__text">I can make websites, logic for various projects, and learn new things on the way!</p>
+            <h1 class="info__header main__heading" data-key="poster__heading">I am a <span class="span--bold">full-stack dev</span>, knowing Python and HTML</h1>
+            <p class="info__text main__text" data-key="poster__text">I can make websites, logic for various projects, and learn new things on the way!</p>
                 
             <div class="info__contact">
                 <a href="#contact__links" class="contact__button">
-                    <button class="button">
+                    <button class="button" data-key="button__text">
                         Contact Me!
                     </button>
                 </a>
@@ -55,7 +68,7 @@
             <img src="images/firstpic.png" alt="Picture of me" class="portrait__image">      <!-- make this a picture of you --> 
             <div class="portrait__textbox">
                 <div class="textbox__square--pink"></div>
-                <p class="textbox__text main__text">Currently learning: <span class="span--bold--white">HTML</span></p>
+                <p class="textbox__text main__text" data-key="picture_caption">Currently learning: <span class='span--bold--white'>JavaScript</span></p>
             </div>
         </div>
     </section>
@@ -111,17 +124,17 @@
         <div class="skills__boxes">
             <div class="boxes__skillbox">
                 <div class="boxes__skillname">
-                    <p class="main__text--bold">Languages</p> <!--put the skills and descs in different divs to make the outline-->
+                    <p class="main__text--bold" data-key="skillnames__languages">Languages</p> <!--put the skills and descs in different divs to make the outline-->
                 </div>
                 <div class="horizontal_line"></div>
                 <div class="boxes__skilldesc">
-                    <p class="main__text">Python CSS HTML</p>
+                    <p class="main__text">Python CSS HTML JavaScript</p>
                 </div>
             </div>
 
             <div class="boxes__skillbox">
                 <div class="boxes__skillname">
-                    <p class="main__text--bold">Databases</p>
+                    <p class="main__text--bold" data-key="skillnames__databases">Databases</p>
                 </div>
                 <div class="horizontal_line"></div>
                 <div class="boxes__skilldesc">
@@ -131,7 +144,7 @@
             
             <div class="boxes__skillbox">
                 <div class="boxes__skillname">
-                    <p class="main__text--bold">Tools</p>
+                    <p class="main__text--bold" data-key="skillnames__tools">Tools</p>
                 </div>
                 <div class="horizontal_line"></div>
                 <div class="boxes__skilldesc">
@@ -141,7 +154,7 @@
 
             <div class="boxes__skillbox">
                 <div class="boxes__skillname">
-                    <p class="main__text--bold">Frameworks</p>
+                    <p class="main__text--bold" data-key="skillnames__frameworks">Frameworks</p>
                 </div>
                 <div class="horizontal_line"></div>
                 <div class="boxes__skilldesc">
@@ -151,7 +164,7 @@
             
             <div class="boxes__skillbox">
                 <div class="boxes__skillname">
-                    <p class="main__text--bold">Other</p>
+                    <p class="main__text--bold" data-key="skillnames__other">Other</p>
                 </div>
                 <div class="horizontal_line"></div>
                 <div class="boxes__skilldesc">
@@ -169,7 +182,7 @@
             </div>
         </div>
         <div class="aboutme__info">
-            <p class="main__text">
+            <p class="main__text" data-key="aboutme">
                 Hello there, I'm Sasha!
                 <br>
                 <br>
@@ -192,11 +205,11 @@
             </div>
         </div>
         <div class="contacts__content">
-            <p class="main__text">
+            <p class="main__text" data-key="contacts__text">
                 I am always open to meeting new people and answering any questions if you have any. You are also contact me if you're interested in giving me a job, be it a one-time thing or something more long-term. Don't hesitate to shoot me a text!
             </p>
             <div class="content__contactsbox"> <!--The text above is on the left of the screen, and the box below is on the right-->
-                <p class="main__text--bold">Contact me here:</p>
+                <p class="main__text--bold" data-key="contacts__contactme">Contact me here:</p>
                 <div class="contactsbox__flexbox">
                     <a href="https://discord.com/users/412948096713228298">
                         <img src="images/Discord.svg" alt="discord icon" class="media--icon">           <!--turn the pictures into <a> tags later to link to your actual socials!!!!!!!!!!-->
@@ -239,6 +252,7 @@
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </footer>
 </body>
 </html>
