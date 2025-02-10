@@ -30,13 +30,15 @@ p{
     color: var(--headings);
     padding-left: 15px;
 }
-.list__language{
-    border: none;
-    background-color: #282C33;      /*fix this*/
-}
-.main__text--big{
-    font-size: var(--text_size--bigger);
-    color: var(--headings);
+.list__language {
+    border-color: var(--background_color);
+    background-color: var(--background_color);
+    font-family: var(--main_font);
+    color: var(--main_text_color);
+    scroll-behavior: smooth;
+    font-size: var(--heading-sizes);
+    outline: none;
+    text-align: end;
 }
 
 .main__heading{
