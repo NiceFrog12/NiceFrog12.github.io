@@ -25,7 +25,7 @@ async function loadTranslations(lang) {
 }
 
 // Load saved language or default to EN
-const savedLanguage = localStorage.getItem("language") || "EN";
+const savedLanguage = localStorage.getItem("language") || "english";
 languageSelector.value = savedLanguage;
 loadTranslations(savedLanguage);
 
