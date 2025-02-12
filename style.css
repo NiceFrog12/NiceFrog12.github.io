@@ -163,6 +163,12 @@ span{
     flex-direction: row-reverse;
     gap:10px;
 }
+.skills__boxes--row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:15px;
+}
 .boxes__skillbox{
     border:1px solid white; /*temporary. Make it look prettier*/
     display: flex;
@@ -247,8 +253,8 @@ footer{
 /* decided to try a button from uiverse.io website */
 .button {
     position: relative;
-    width: 120px;
-    height: 40px;
+    width: 200px;
+    height: 50px;
     background-color: #000;
     display: flex;
     align-items: center;
@@ -260,6 +266,8 @@ footer{
     gap: 12px;
     border-radius: 8px;
     cursor: pointer;
+    font-size: var(--text_size);
+    font-family: var(--main_font);
   }
   
   .button::before {
@@ -269,8 +277,8 @@ footer{
     left: -4px;
     top: -1px;
     margin: auto;
-    width: 128px;
-    height: 48px;
+    width: 208px;
+    height: 58px;
     border-radius: 10px;
     background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
     z-index: -10;
@@ -300,7 +308,7 @@ footer{
     scale: 0.7;
   }
   
-  
+
 
   /* планшеты горизонтально */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -326,7 +334,7 @@ footer{
     --text_size--bigger:28px;
     
     }
-
+    
     .main__projects{
         display: none;
     }
@@ -338,9 +346,10 @@ footer{
     .main__contacts{
         padding: 0 10px 0 10px ;
     }
-    /* temporarily no nav until I learn how to make a burger */
+
+
     .header__nav{
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         width: calc(100vw - 10px);
@@ -353,10 +362,6 @@ footer{
         flex-direction: column;
         text-align: right;
     }
-    /* temporarily disable the language function as it breaks the html */
-    /* .list__language{
-        display: none;
-    } */
     /* attempt at a burger menu */
     .burger-menu{
         position: relative;
