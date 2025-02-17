@@ -8,6 +8,7 @@
     --text_size:20px;
     --default_bold:700;
     --text_size--bigger:24px;
+    --main_purple:#C778DD;
     --background_color:#282C33; /* background-color: #0e1013;     this lowkey looks good */
 }
 
@@ -79,7 +80,7 @@ p{
     gap: 10px;
 }
 .textbox__square--pink{
-    background-color:#C778DD;
+    background-color:var(--main_purple);
     height: 25px;
     width: 25px;
 }
@@ -123,7 +124,7 @@ p{
 }
 
 span{
-    color: #C778DD;
+    color: var(--main_purple);
     margin: 0px;
     font-family: var(--main_font);
 }
@@ -149,7 +150,7 @@ span{
 .horizontal_line--pink{
     height: 1px;
     width: 45vw;
-    background-color: #C778DD;
+    background-color: var(--main_purple);
 }
 .projects__boxes{
     display:flex !important;
@@ -161,7 +162,7 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #C778DD ;
+    border: 1px solid var(--main_purple) ;
     border-radius: 10px;
     box-shadow: #7e4c8b 15px 10px;
     padding: 10px 25px 5px 20px;
@@ -172,7 +173,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #C778DD ;
+    border-bottom: 1px solid var(--main_purple) ;
 }
 .project__picture{
     width: 100%;
@@ -284,7 +285,8 @@ footer{
 .main__projects,
 .main__skills,
 .main__aboutme,
-.main__contacts{
+.main__contacts,
+.main__facts{
     padding: 0 10vw 0 10vw ;
 }
 
@@ -346,7 +348,22 @@ footer{
     scale: 0.7;
   }
   
-
+.facts__boxlist{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80vw;
+    flex-wrap: wrap;
+}
+.boxlist__boxes{
+    border: 1px solid white;
+    border-radius: 1px;
+    display: flex;
+    padding: 0 20px 0 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 
   /* планшеты горизонтально */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -380,6 +397,9 @@ footer{
     .main__aboutme,
     .main__contacts{
         padding: 0 10px 0 10px ;
+    }
+    #facts__line{
+        display: none;
     }
     body{
         width: 100vw;

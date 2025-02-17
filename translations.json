@@ -19,7 +19,12 @@
         "pokemon_project_title":"Pokemon fighting!",
         "pokemon_project_desc" : "A telegram bot to fight your friends with randomly assigned pokemon!",
         "cardsite_project_title" : "Cards website",
-        "cardsite_project_desc" : "A website for users to make their own cards/reminders that everyone else will be able to see after logging into the website!"
+        "cardsite_project_desc" : "A website for users to make their own cards/reminders that everyone else will be able to see after logging into the website!",
+        "fact_family" : "I come from a family of <span class='main__text--bold'>three</span>, having a brother, and a father",
+        "fact_residence" : "I live in <span class='main__text--bold'>Germany</span>, but am <span class='main__text--bold'>Latvian</span>, and speak <span class='main__text--bold'>Russian!</span>",
+        "fact_languages" : "I am <span class='main__text--bold'>tri</span>-lingual",
+        "fact_travel" : "I want to travel to <span class='main__text--bold'>Russia</span> in my near future",
+        "fact_winter" : "<span class='main__text--bold'>Winter</span> over summer every day of the week"     
     },
     "russian" : {
         "poster__heading":"Я <span class='span--bold'>фулл-стек разработчик</span>, и умею работать как и с Python, так и с HTML, CSS и JavaScript!",
@@ -41,7 +46,13 @@
         "pokemon_project_title": "Битвы покемонов!",
         "pokemon_project_desc": "Телеграм-бот, позволяющий сражаться с друзьями на случайных покемонах!",
         "cardsite_project_title": "Сайт с карточками",
-        "cardsite_project_desc": "Сайт, где пользователи могут создавать свои собственные карточки/напоминания, которые будут видны всем после входа в систему!"
+        "cardsite_project_desc": "Сайт, где пользователи могут создавать свои собственные карточки/напоминания, которые будут видны всем после входа в систему!",
+        "fact_family" : "Я вырос в семье из <span class='main__text--bold'>трёх</span> человек; у меня есть брат и отец",
+        "fact_residence" : "Я живу в <span class='main__text--bold'>Германии</span>, но я <span class='main__text--bold'>Латыш</span> который говорит по-русски!",
+        "fact_languages" : "Я говорю на <span class='main__text--bold'>трёх</span> языках",
+        "fact_travel" : "Я хочу поехать в <span class='main__text--bold'>Россию</span> в ближайшем будущем",
+        "fact_winter" : "<span class='main__text--bold'>Зима</span> над летом в любой день недели"
+
     },
     "german" : {
         "poster__heading": "Ich bin ein <span class='span--bold'>Full-Stack-Entwickler</span>, der Python, HTML und JavaScript beherrscht",
@@ -63,7 +74,11 @@
         "pokemon_project_title": "Pokemon-Kampf!",
         "pokemon_project_desc": "Ein Telegram-Bot, um mit zufällig zugewiesenen Pokémon gegen deine Freunde zu kämpfen!",
         "cardsite_project_title": "Karten-Website",
-        "cardsite_project_desc": "Eine Website, auf der Benutzer ihre eigenen Karten/Erinnerungen erstellen können, die jeder nach dem Einloggen sehen kann!"
-
-    }
+        "cardsite_project_desc": "Eine Website, auf der Benutzer ihre eigenen Karten/Erinnerungen erstellen können, die jeder nach dem Einloggen sehen kann!",
+        "fact_family" : "Ich komme aus einer Familie von <span class='main__text--bold'>drei</span>, habe einen Bruder und einen Vater",
+        "fact_residence" : "Ich lebe in <span class='main__text--bold'>Deutschland</span>, bin aber <span class='main__text--bold'>Lette</span> und spreche <span class='main__text--bold'>Russisch!</span>",
+        "fact_languages" : "Ich spreche <span class='main__text--bold'>drei</span> Sprachen",
+        "fact_travel" : "Ich möchte in naher Zukunft nach <span class='main__text--bold'>Russland</span> reisen",
+        "fact_winter" : "<span class='main__text--bold'>Winter</span> ist besser als Sommer an jedem Tag der Woche"
+            }
 }

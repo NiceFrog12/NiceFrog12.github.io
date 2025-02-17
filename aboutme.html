@@ -10,15 +10,15 @@
     <div class="main__sidebar">
         <div class="line"></div>
         <a href="https://github.com/NiceFrog12">
-            <img src="images/Github.svg" alt="github">
+            <img src="images/interface/Github.svg" alt="github">
         </a>
         <a href="https://www.figma.com/files/team/1419611204923309043/">
-            <img src="images/Figma.svg" alt="figma">
+            <img src="images/interface/Figma.svg" alt="figma">
         </a>
     </div>
     <header class="main__header">
         <div class="header__logo">
-            <img src="images/logo.svg" alt="logo" class="logo__img">
+            <img src="images/interface/logo.svg" alt="logo" class="logo__img">
             <p class="logo__text">Litvin</p>
         </div>
 
@@ -65,7 +65,7 @@
                 Turning my imagination into reality has been my passion for about a year now, and my curiosity towards the new only grows as I learn more. I'll be happy to assist anyone to establish
                 your presence online via website, a bot, or something else enirely. I always will gladly jump on any opportunity to gather experience and learn more about new libraries and frameworks.
             </p>
-            <img src="images/secondpic.png" alt="" class="info__portrait">
+            <img src="images/static/secondpic.png" alt="" class="info__portrait">
         </div>
     </section>
 
@@ -133,19 +133,55 @@
     <section class="main__facts">
         <div class="section__header">
             <h1 class="facts__header main__heading"><span>#</span>my-fun-facts</h1>
-            <div class="horizontal_line--pink"></div>
+            <div class="horizontal_line--pink" id="facts__line"></div>
         </div>
         <div class="facts__boxlist">
             <div class="boxlist__boxes">
-                
+                <p class="main__text" data-key="fact_family">I come from a family of <span class="main__text--bold">three</span>, having a brother, and a father</p>
             </div>
-            <div class="boxlist__boxes"></div>
-            <div class="boxlist__boxes"></div>
-            <div class="boxlist__boxes"></div>
-            <div class="boxlist__boxes"></div>
-            <div class="boxlist__boxes"></div>
+            <div class="boxlist__boxes">
+                <p class="main__text" data-key="fact_residence">I live in <span class="main__text--bold">Germany</span>, but am <span class="main__text--bold">Latvian</span>, and speak <span class="main__text--bold">Russian!</span></p>
+            </div>
+            <div class="boxlist__boxes">
+                <p class="main__text" data-key="fact_languages">I am <span class="main__text--bold">tri</span>-lingual</p>
+            </div>
+            <div class="boxlist__boxes">
+                <p class="main__text" data-key="fact_travel">I want to travel to <span class="main__text--bold">Russia</span> in my near future</p>
+            </div>
+            <div class="boxlist__boxes">
+                <p class="main__text" data-key="fact_winter"><span class="main__text--bold">Winter</span> over summer every day of the week</p>
+            </div>
         </div>
     </section>
 
+    
+    <footer>
+        <div class="footer__main">
+            <div class="main__credits">
+                <div class="credits__name">
+                    <img src="images/interface/logo.svg" alt="logo" class="logo__img--small">
+                    <p class="span--bold--white">Litvins</p>
+                    <p class="main__text">sasha18062009@gmail.com</p>
+                </div>
+                <p class="span--bold--white">Full-stack developer</p>
+            </div>
+            <div class="main__media">
+                <p class="span--bold--white main__text--big">Media</p>
+                <div class="media__images">
+                    <a href="https://github.com/NiceFrog12">
+                        <img src="images/interface/Github.svg" alt="github" class="media--icon">      <!--turn the pictures into <a> tags later to link to your actual socials-->
+                    </a>
+                    <a href="https://www.figma.com/files/team/1419611204923309043/">
+                        <img src="images/interface/Figma.svg" alt="figma" class="media--icon">
+                    </a>
+                    <a href="https://discord.com/users/412948096713228298">
+                        <img src="images/interface/Discord.svg" alt="discord" class="media--icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </footer>
+</body>
 </body>
 </html>
