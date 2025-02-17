@@ -6,8 +6,18 @@ function open_burger() {
     nav.classList.toggle('active');
 };
 
+function close_burger() {
+  burger.classList.remove('active');
+  nav.classList.remove('active');
+}
+// make the website catch if you click on the burger menu
 burger.addEventListener("click", open_burger);
-
+// make the website understand what nav options there are
+const menuOptions = nav.querySelectorAll('.list__item');
+// make the burger close when option is selected
+menuOptions.forEach(option => {
+  option.addEventListener('click', close_burger);
+});
 
 // this is for translating the website. Add the translations to translation.json later
 const languageSelector = document.getElementById("language");
@@ -48,7 +58,7 @@ $(document).ready(function(){
     prevArrow: "<img src='images/interface/Arrow_left.svg' class='arrow arrow--left'>",
     nextArrow: "<img src='images/interface/Arrow_right.svg' class='arrow arrow--right'>",
     autoplay: isMobile(), // Enable autoplay only if mobile
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 768,
