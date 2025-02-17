@@ -151,11 +151,49 @@ span{
     width: 45vw;
     background-color: #C778DD;
 }
-.main__projects{
-    display: none;
-}
 .projects__boxes{
-    display:flex;
+    display:flex !important;
+    align-items: center ;
+    justify-content: center ;
+}
+.boxes__project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C778DD ;
+    border-radius: 10px;
+    box-shadow: #7e4c8b 15px 10px;
+    padding: 10px 25px 5px 20px;
+    margin: 0 10px 0 15px;
+    background-color: var(--background_color);
+}
+.project__skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #C778DD ;
+}
+.project__picture{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: contain;
+}
+.title--hyperlink{
+    text-decoration: none;
+    font-size: var(--text_size);
+}
+.project__description{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    margin-top: 10px;
+}
+.arrow{
+    width: 300px;
+    height: auto;
 }
 .skills__boxes {
     display: flex;
@@ -335,9 +373,6 @@ footer{
     
     }
     
-    .main__projects{
-        display: none;
-    }
     /* a little gap for every section on the left and right so that it looks good. */
     .main__banner,
     .main__projects,
@@ -346,7 +381,9 @@ footer{
     .main__contacts{
         padding: 0 10px 0 10px ;
     }
-
+    body{
+        width: 100vw;
+    }
 
     .header__nav{
         position: fixed;
@@ -446,9 +483,7 @@ footer{
         width: 100vw;
         height: auto;
     }
-    body{
-        width: 100vw;
-    }
+    
     .info__contact{
         display: flex;
         justify-content: center;

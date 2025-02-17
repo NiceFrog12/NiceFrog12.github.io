@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <div class="main__sidebar">
         <div class="line"></div>
         <a href="https://github.com/NiceFrog12">
-            <img src="images/Github.svg" alt="github">
+            <img src="images/interface/Github.svg" alt="github">
         </a>
         <a href="https://www.figma.com/files/team/1419611204923309043/">
-            <img src="images/Figma.svg" alt="figma">
+            <img src="images/interface/Figma.svg" alt="figma">
         </a>
     </div>
     <header class="main__header">
         <div class="header__logo">
-            <img src="images/logo.svg" alt="logo" class="logo__img">
+            <img src="images/interface/logo.svg" alt="logo" class="logo__img">
             <p class="logo__text">Litvin</p>
         </div>
 
@@ -32,9 +35,9 @@
             
 
             <ul class="nav__list">
-                <a href="" class="list__item span--bold"><span>#</span>home</a>
-                <a href="" class="list__item"><span>#</span>works</a>
-                <a href="" class="list__item"><span>#</span>about-me</a>
+                <a href="#home" class="list__item span--bold"><span>#</span>home</a>
+                <a href="#projects" class="list__item"><span>#</span>works</a>
+                <a href="#aboutme" class="list__item"><span>#</span>about-me</a>
                 <a href="#contact__links" class="list__item"><span>#</span>contacts</a>
                 <select name="language" id="language" class="list__language">
                     <option value="english">EN</option>
@@ -54,7 +57,7 @@
     <section class="main__banner">
         <div class="banner__info">
             <h1 class="info__header main__heading" data-key="poster__heading">I am a <span class="span--bold">full-stack dev</span>, knowing Python and HTML</h1>
-            <p class="info__text main__text" data-key="poster__text">I can make websites, logic for various projects, and learn new things on the way!</p>
+            <p class="info__text main__text" id="home" data-key="poster__text">I can make websites, logic for various projects, and learn new things on the way!</p>
                 
             <div class="info__contact">
                 <a href="#contact__links" class="contact__button">
@@ -65,7 +68,7 @@
             </div>
         </div>
         <div class="banner__portrait">
-            <img src="images/firstpic.png" alt="Picture of me" class="portrait__image">      <!-- make this a picture of you --> 
+            <img src="images/static/firstpic.png" alt="Picture of me" class="portrait__image">      <!-- make this a picture of you --> 
             <div class="portrait__textbox">
                 <div class="textbox__square--pink"></div>
                 <p class="textbox__text main__text" data-key="picture_caption">Currently learning: <span class='span--bold--white'>JavaScript</span></p>
@@ -80,33 +83,45 @@
             <div class="horizontal_line--pink">
             </div>
         </div>
-        <div class="projects__boxes">                       <!--look for projects to insert here later. This will also be a slider-->
+        <div class="projects__boxes" id="projects">                       <!--look for projects to insert here later. This will also be a slider-->
             <div class="boxes__project">
-                <img src="" alt="project__picture"> <!--put the project skills and descs in different divs to make the outline-->
+                <img src="images/projects/portfolio.png" alt="project__picture" class="project__picture"> <!--put the project skills and descs in different divs to make the outline-->
                 <div class="project__skills">
-                    <p class="main__text--outline">Skill123 aka flask python etc.</p>
+                    <p class="main__text">HTML, CSS, JS</p>
                 </div>
                 <div class="project__description">
-                    <p class="main__text--big">Website1</p>
-                    <p class="main__text--outline">website numba one</p>
+                    <a href="https://github.com/NiceFrog12/NiceFrog12.github.io" data-key="portfolio_project_title" class="main__text main__text--bold title--hyperlink">Portfolio</a>
+                    <p class="main__text" data-key="portfolio_project_desc">Website you're currently on!</p>
                 </div>
             </div>
             <div class="boxes__project">
-                <img src="" alt="project__picture">
+                <img src="images/projects/globalwarming.jpg" alt="project__picture" class="project__picture">
                 <div class="project__skills">
-                    <p class="main__text--outline"></p>
+                    <p class="main__text">HTML, CSS, SQLAlchemy, Flask, Python</p>
                 </div>
                 <div class="project__description">
-                    <p class="main__text--outline"></p>
+                    <a href="https://github.com/NiceFrog12/global-warming" data-key="global_warming_project_title" class="main__text main__text--bold title--hyperlink">Global warming awareness project</a>
+                    <p class="main__text" data-key="global_warming_project_desc">This project includes a discord bot, and a website that are connected with a database, and a support user-written facts about global warming</p>
                 </div>
             </div>
             <div class="boxes__project">
-                <img src="" alt="project__picture">
+                <img src="images/projects/pikachu.png" alt="project__picture" class="project__picture">
                 <div class="project__skills">
-                    <p class="main__text--outline"></p>
+                    <p class="main__text">Telebot, Python, Python libs</p>
                 </div>
                 <div class="project__description">
-                    <p class="main__text--outline"></p>
+                    <a href="https://github.com/NiceFrog12/pokemon-telegram-bot" data-key="pokemon_project_title" class="main__text main__text--bold title--hyperlink">Pokemon fighting!</a>
+                    <p class="main__text" data-key="pokemon_project_desc">A telegram bot to fight your friends with randomly assigned pokemon!</p>
+                </div>
+            </div>
+            <div class="boxes__project">
+                <img src="images/projects/post_icon.png" alt="project__picture" class="project__picture">
+                <div class="project__skills">
+                    <p class="main__text">Python, CSS, HTML, Flask, SQLAlchemy</p>
+                </div>
+                <div class="project__description">
+                    <a href="https://github.com/NiceFrog12/cardsite" class="main__text main__text--bold title--hyperlink" data-key="cardsite_project_title">Cards website</a>
+                    <p class="main__text" data-key="cardsite_project_desc">A website for users to make their own cards/reminders that everyone else will be able to see after logging into the website!</p>
                 </div>
             </div>
         </div>
@@ -182,7 +197,7 @@
             </div>
         </div>
         <div class="aboutme__info">
-            <p class="main__text" data-key="aboutme">
+            <p class="main__text" id="aboutme" data-key="aboutme">
                 Hello there, I'm Sasha!
                 <br>
                 <br>
@@ -193,7 +208,7 @@
                 Turning my imagination into reality has been my passion for about a year now, and my curiosity towards the new only grows as I learn more. I'll be happy to assist anyone to establish
                 your presence online via website, a bot, or something else enirely. I always will gladly jump on any opportunity to gather experience and learn more about new libraries and frameworks.
             </p>
-            <img src="images/secondpic.png" alt="" class="info__portrait">
+            <img src="images/static/secondpic.png" alt="" class="info__portrait">
         </div>
     </section>
 
@@ -212,13 +227,13 @@
                 <p class="main__text--bold" data-key="contacts__contactme">Contact me here:</p>
                 <div class="contactsbox__flexbox">
                     <a href="https://discord.com/users/412948096713228298">
-                        <img src="images/Discord.svg" alt="discord icon" class="media--icon">           <!--turn the pictures into <a> tags later to link to your actual socials!!!!!!!!!!-->
+                        <img src="images/interface/Discord.svg" alt="discord icon" class="media--icon">           <!--turn the pictures into <a> tags later to link to your actual socials!!!!!!!!!!-->
                     </a>
                     <p class="main__text">niceguy12_</p>
                 </div>
                 <div class="contactsbox__flexbox">
                     <a href="">
-                        <img src="images/Email.svg" alt="email icon" class="media--icon">
+                        <img src="images/interface/Email.svg" alt="email icon" class="media--icon">
                     </a>
                     <p class="main__text">sasha18062009@gmail.com</p>
                 </div>
@@ -231,7 +246,7 @@
         <div class="footer__main">
             <div class="main__credits">
                 <div class="credits__name">
-                    <img src="images/logo.svg" alt="logo" class="logo__img--small">
+                    <img src="images/interface/logo.svg" alt="logo" class="logo__img--small">
                     <p class="span--bold--white">Litvins</p>
                     <p class="main__text">sasha18062009@gmail.com</p>
                 </div>
@@ -241,13 +256,13 @@
                 <p class="span--bold--white main__text--big">Media</p>
                 <div class="media__images">
                     <a href="https://github.com/NiceFrog12">
-                        <img src="images/Github.svg" alt="github" class="media--icon">      <!--turn the pictures into <a> tags later to link to your actual socials-->
+                        <img src="images/interface/Github.svg" alt="github" class="media--icon">      <!--turn the pictures into <a> tags later to link to your actual socials-->
                     </a>
                     <a href="https://www.figma.com/files/team/1419611204923309043/">
-                        <img src="images/Figma.svg" alt="figma" class="media--icon">
+                        <img src="images/interface/Figma.svg" alt="figma" class="media--icon">
                     </a>
                     <a href="https://discord.com/users/412948096713228298">
-                        <img src="images/Discord.svg" alt="discord" class="media--icon">
+                        <img src="images/interface/Discord.svg" alt="discord" class="media--icon">
                     </a>
                 </div>
             </div>

@@ -11,7 +11,15 @@
         "skillnames__other" : "Other",
         "aboutme" : "Hello there, I'm Sasha!<br><br>I'm a young up-and-coming full-stack dev, learning Python, HTML, CSS, and JavaScript to build my imaginary websites. I come from Latvia, but I live in Germany, Lubeck. Aside from websites,I have been learning to make Discord, and Telegram bots, aswell as implementing Python and JavaScript into my websites to enhance the experience even further.<br><br>Turning my imagination into reality has been my passion for about a year now, and my curiosity towards the new only grows as I learn more. I'll be happy to assist anyone to establish your presence online via website, a bot, or something else enirely. I always will gladly jump on any opportunity to gather experience and learn more about new libraries and frameworks.",
         "contacts__text" : "I am always open to meeting new people and answering any questions if you have any. You are also contact me if you're interested in giving me a job, be it a one-time thing or something more long-term. Don't hesitate to shoot me a text!",
-        "contacts__contactme" : "Contact me here:"
+        "contacts__contactme" : "Contact me here:",
+        "portfolio_project_title" : "Portfolio",
+        "portfolio_project_desc" : "Website you're currently on!",
+        "global_warming_project_title" : "Global warming awareness project",
+        "global_warming_project_desc" : "This project includes a discord bot, and a website that are connected with a database, and a support user-written facts about global warming",
+        "pokemon_project_title":"Pokemon fighting!",
+        "pokemon_project_desc" : "A telegram bot to fight your friends with randomly assigned pokemon!",
+        "cardsite_project_title" : "Cards website",
+        "cardsite_project_desc" : "A website for users to make their own cards/reminders that everyone else will be able to see after logging into the website!"
     },
     "russian" : {
         "poster__heading":"Я <span class='span--bold'>фулл-стек разработчик</span>, и умею работать как и с Python, так и с HTML, CSS и JavaScript!",
@@ -25,7 +33,15 @@
         "skillnames__other" : "Другое",
         "aboutme" : "Всем привет, я Саша!<br><br>Я молодой и многообещающий фулл-стек разработчик, и я обучаюсь Python, HTML, CSS, и JavaScript для создания вебсайтов из ничего. Я родом из Латвии, но проживаю в Германии, в городе Любек. Помимо сайтов, я также умею создавать ботов для Дискорда, или Телеграмма, которые также используют Python или JavaScript для лучшего опыта использования.<br><br>Воплощение моего воображения в жизнь было моим хобби уже на протяжении года, и моя жажда к знаниям программирования только растёт с каждой новой обученной функцией. Я был бы рад помочь вам утвердить о своём существовании на сети с помощью сайта, бота, или любого другого способа. Я всегда с радостью воспользуюсь возможностью обучится чему-то новому и набраться опыта работы с новыми библиотеками и фрэймворками.",
         "contacts__text" : "Я всегда открыт к новым знакомствам, и всегда отвечу на любые вопросы которые могу у вас появиться. Вы также можете писать, если заинтересованы в моих услугах, будь это одноразовой услугой, или более долгосрочной работой. Не бойтесь писать мне, я только буду рад ответить!",
-        "contacts__contactme" : "Напишите мне здесь:"
+        "contacts__contactme" : "Напишите мне здесь:",
+        "portfolio_project_title": "Портфолио",
+        "portfolio_project_desc": "Сайт, на котором ты сейчас находишься!",
+        "global_warming_project_title": "Проект по осведомленности о глобальном потеплении",
+        "global_warming_project_desc": "Этот проект включает в себя бота для Discord и веб-сайт, которые связаны базой данных и поддерживают пользовательские факты о глобальном потеплении.",
+        "pokemon_project_title": "Битвы покемонов!",
+        "pokemon_project_desc": "Телеграм-бот, позволяющий сражаться с друзьями на случайных покемонах!",
+        "cardsite_project_title": "Сайт с карточками",
+        "cardsite_project_desc": "Сайт, где пользователи могут создавать свои собственные карточки/напоминания, которые будут видны всем после входа в систему!"
     },
     "german" : {
         "poster__heading": "Ich bin ein <span class='span--bold'>Full-Stack-Entwickler</span>, der Python, HTML und JavaScript beherrscht",
@@ -39,6 +55,15 @@
         "skillnames__other": "Sonstiges",
         "aboutme": "Hallo, ich bin Sasha!<br><br>Ich bin ein junger aufstrebender Full-Stack-Entwickler, der Python, HTML, CSS und JavaScript lernt, um meine imaginären Websites zu erstellen. Ich komme aus Lettland, lebe aber in Deutschland, Lübeck. Neben Websites habe ich auch gelernt, Discord- und Telegram-Bots zu erstellen und Python sowie JavaScript in meine Websites zu integrieren, um das Erlebnis noch weiter zu verbessern.<br><br>Es ist seit etwa einem Jahr meine Leidenschaft, meine Fantasie in die Realität umzusetzen, und meine Neugier auf Neues wächst, je mehr ich lerne. Ich helfe gerne dabei, eine Online-Präsenz mit einer Website, einem Bot oder etwas anderem zu etablieren. Ich freue mich immer, jede Gelegenheit zu nutzen, um neue Erfahrungen zu sammeln und mehr über neue Bibliotheken und Frameworks zu lernen.",
         "contacts__text": "Ich bin immer offen, neue Leute zu treffen und Fragen zu beantworten, falls du welche hast. Du kannst mich auch kontaktieren, wenn du daran interessiert bist, mir einen Job anzubieten, sei es eine einmalige Sache oder etwas langfristigeres. Zögere nicht, mir eine Nachricht zu schicken!",
-        "contacts__contactme": "Kontaktiere mich hier:"
+        "contacts__contactme": "Kontaktiere mich hier:",
+        "portfolio_project_title": "Portfolio",
+        "portfolio_project_desc": "Website, auf der du dich gerade befindest!",
+        "global_warming_project_title": "Projekt zur Sensibilisierung für die globale Erwärmung",
+        "global_warming_project_desc": "Dieses Projekt umfasst einen Discord-Bot und eine Website, die mit einer Datenbank verbunden sind und von Benutzern geschriebene Fakten über die globale Erwärmung unterstützen.",
+        "pokemon_project_title": "Pokemon-Kampf!",
+        "pokemon_project_desc": "Ein Telegram-Bot, um mit zufällig zugewiesenen Pokémon gegen deine Freunde zu kämpfen!",
+        "cardsite_project_title": "Karten-Website",
+        "cardsite_project_desc": "Eine Website, auf der Benutzer ihre eigenen Karten/Erinnerungen erstellen können, die jeder nach dem Einloggen sehen kann!"
+
     }
 }
