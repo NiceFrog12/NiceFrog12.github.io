@@ -19,7 +19,7 @@
         "pokemon_project_title":"Pokemon fighting!",
         "pokemon_project_desc" : "A telegram bot to fight your friends with randomly assigned pokemon!",
         "wpu_project_title" : "Bot for sustainability!",
-        "wpu_project_title" : "This is a bot made in German, made to help you with some questions you might have about sorting trash, or living your life in a more sustainable way!",
+        "wpu_project_desc" : "This is a bot made in German, made to help you with some questions you might have about sorting trash, or living your life in a more sustainable way!",
         "cardsite_project_title" : "Cards website",
         "cardsite_project_desc" : "A website for users to make their own cards/reminders that everyone else will be able to see after logging into the website!",
         "fact_family" : "I come from a family of <span class='main__text--bold'>three</span>, having a brother, and a father",
